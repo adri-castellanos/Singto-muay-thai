@@ -45,7 +45,7 @@ a {
     flex-wrap: wrap;
 }
 
-h2{
+h2 {
     color: #982fab;
 }
 
@@ -81,18 +81,20 @@ h2{
     align-items: center;
 }
 
-.info-programas {  display: grid;
+.info-programas {
+    display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 200px 200px;
     grid-auto-columns: 1fr;
     gap: 25px 25px;
     grid-auto-flow: row;
     grid-template-areas:
-      "camp camp basics drills"
-      "camp camp basics kids";
-  }
-  
-  .camp { grid-area: camp;
+        "camp camp basics drills"
+        "camp camp basics kids";
+}
+
+.camp {
+    grid-area: camp;
     background-image: url('../resources/camp.png');
     background-size: cover;
     color: white;
@@ -100,9 +102,10 @@ h2{
     text-align: center;
     align-items: center;
     justify-content: center;
- }
+}
 
-  .basics { grid-area: basics;
+.basics {
+    grid-area: basics;
     background-image: url('../resources/basics.png');
     background-size: cover;
     color: white;
@@ -111,8 +114,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .drills { grid-area: drills;
+
+.drills {
+    grid-area: drills;
     background-image: url('../resources/drills.png');
     background-size: cover;
     color: white;
@@ -121,8 +125,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .kids { grid-area: kids;
+
+.kids {
+    grid-area: kids;
     background-image: url('../resources/kids.png');
     background-size: cover;
     color: white;
@@ -178,20 +183,80 @@ h2{
     justify-content: space-evenly;
     padding: 80px;
 }
-  
-.hero-sec-programas {  display: grid;
+
+/* MEDIAS QUERYS - MOBILE LAST */
+
+@media (max-width: 600px) {
+    .logo-hero {
+        width: 150%;
+    }
+
+    .conocenos {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-image-combo-text {
+        width: auto;
+    }
+
+    .text-image-combo-image {
+        width: 200px;
+    }
+
+    .programas {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .text-box {
+        width: auto;
+    }
+
+    .info-programas {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 200px 200px;
+        gap: 25px 25px;
+        grid-template-areas:
+            "camp camp basics basics"
+            "drills drills kids kids";
+            justify-content: center;
+    }
+
+    .text-image-combo-text {
+        text-align: center;
+    }
+
+    .fight-opportunities {
+        padding: 20px;
+    }
+
+
+}
+
+.hero-sec-programas {
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "photo photo tittle tittle"
-      "photo photo tittle tittle";
-      border-top: solid 2px #ffffff;
-  }
-  
-  .tittle { grid-area: tittle; 
+        "photo photo tittle tittle"
+        "photo photo tittle tittle";
+    border-top: solid 2px #ffffff;
+}
+
+.tittle {
+    grid-area: tittle;
     background-image: url(../resources/background-newsletter.png);
     background-size: cover;
     color: white;
@@ -200,8 +265,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .photo-programas { grid-area: photo;
+
+.photo-programas {
+    grid-area: photo;
     background-image: url(../resources/programas.png);
     background-size: cover;
 }
@@ -221,29 +287,57 @@ h2{
     flex-wrap: wrap;
 }
 
-.text-box {
-    width: 600px;
-    padding: 20px;
-}
-
 .foto-index {
     height: 300px;
     padding: 20px;
 }
 
-.hero-sec-horarios {  display: grid;
+/* MEDIAS QUERYS - MOBILE LAST */
+
+@media (max-width: 600px) {
+    .hero-sec-programas {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo photo photo photo"
+            "tittle tittle tittle tittle";
+        border-top: solid 2px #ffffff;
+    }
+
+    .text-image {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: white;
+        font-size: 18px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        align-content: space-between;
+        flex-wrap: wrap;
+}
+
+.hero-sec-horarios {
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "photo photo tittle tittle"
-      "photo photo tittle tittle";
-      border-top: solid 2px #ffffff;
-  }
-  
-  .tittle { grid-area: tittle; 
+        "photo photo tittle tittle"
+        "photo photo tittle tittle";
+    border-top: solid 2px #ffffff;
+}
+
+.tittle {
+    grid-area: tittle;
     background-image: url(../resources/background-newsletter.png);
     background-size: cover;
     color: white;
@@ -252,8 +346,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .photo-horarios { grid-area: photo;
+
+.photo-horarios {
+    grid-area: photo;
     background-image: url(../resources/horarios.png);
     background-size: cover;
 }
@@ -268,19 +363,36 @@ h2{
     align-items: center;
 }
 
-.hero-sec-planes {  display: grid;
+@media (max-width: 600px) {
+    .hero-sec-horarios {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo photo photo photo"
+            "tittle tittle tittle tittle";
+        border-top: solid 2px #ffffff;
+    }
+}
+
+.hero-sec-planes {
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "photo photo tittle tittle"
-      "photo photo tittle tittle";
-      border-top: solid 2px #ffffff;
-  }
-  
-  .tittle { grid-area: tittle; 
+        "photo photo tittle tittle"
+        "photo photo tittle tittle";
+    border-top: solid 2px #ffffff;
+}
+
+.tittle {
+    grid-area: tittle;
     background-image: url(../resources/background-newsletter.png);
     background-size: cover;
     color: white;
@@ -289,8 +401,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .photo-planes { grid-area: photo;
+
+.photo-planes {
+    grid-area: photo;
     background-image: url(../resources/planes.png);
     background-size: cover;
 }
@@ -339,19 +452,36 @@ h2{
     color: #982fab;
 }
 
-.hero-sec-contacto {  display: grid;
+@media (max-width: 600px) {
+    .hero-sec-planes {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo photo photo photo"
+            "tittle tittle tittle tittle";
+        border-top: solid 2px #ffffff;
+    }
+}
+
+.hero-sec-contacto {
+    display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "photo photo tittle tittle"
-      "photo photo tittle tittle";
-      border-top: solid 2px #ffffff;
-  }
-  
-  .tittle { grid-area: tittle; 
+        "photo photo tittle tittle"
+        "photo photo tittle tittle";
+    border-top: solid 2px #ffffff;
+}
+
+.tittle {
+    grid-area: tittle;
     background-image: url(../resources/background-newsletter.png);
     background-size: cover;
     color: white;
@@ -360,8 +490,9 @@ h2{
     align-items: center;
     justify-content: center;
 }
-  
-  .photo-contacto { grid-area: photo;
+
+.photo-contacto {
+    grid-area: photo;
     background-image: url(../resources/contacto.png);
     background-size: cover;
 }
@@ -377,7 +508,7 @@ h2{
 }
 
 .contacto {
-    background-color:#212529;
+    background-color: #212529;
     font-family: "Lato", sans-serif;
     color: white;
     font-size: 18px;
@@ -409,4 +540,24 @@ h2{
     display: flex;
     justify-content: center;
     padding: 50px;
+}
+
+@media (max-width: 600px) {
+    .hero-sec-contacto {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo photo photo photo"
+            "tittle tittle tittle tittle";
+        border-top: solid 2px #ffffff;
+    }
+
+    .form {
+        width: auto
+        ;
+    }
 }
