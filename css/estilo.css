@@ -178,6 +178,7 @@ h2{
     justify-content: space-evenly;
     padding: 80px;
 }
+/* MEDIA QUERYS MOBILE LAST */
 
 @media (max-width: 600px) {
     .logo-hero {
@@ -233,6 +234,7 @@ h2{
     }
 }
 
+/* PROGRAMAS */
   
 .hero-sec-programas {  display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -271,7 +273,7 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 80px;
+    padding: 50px;
     align-content: space-between;
     flex-wrap: wrap;
 }
@@ -279,6 +281,29 @@ h2{
 .foto-index {
     height: 300px;
     padding: 20px;
+}
+
+/* MEDIA QUERYS - MOBILE LAST */
+
+@media (max-width: 600px) {
+    .hero-sec-programas {  display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 300px 300px;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "photo photo photo photo"
+          "tittle tittle tittle tittle";
+          border-top: solid 2px #ffffff;
+      } 
+
+      .text-image {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: white;
+        justify-content: center;
+    }
 }
 
 .hero-sec-horarios {  display: grid;
