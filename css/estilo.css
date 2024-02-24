@@ -254,6 +254,50 @@ h2{
     background-size: cover;
 }
 
+.planes-all-inclusive {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+}
+
+.h3-planes {
+    color: #982fab;
+}
+
+.planes-3x {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+}
+
+.h3-planes {
+    color: #982fab;
+}
+
 .hero-sec-contacto {  display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
