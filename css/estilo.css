@@ -188,6 +188,7 @@ h2{
     grid-template-areas:
       "photo photo tittle tittle"
       "photo photo tittle tittle";
+      border-top: solid 2px #ffffff;
   }
   
   .tittle { grid-area: tittle; 
@@ -205,6 +206,31 @@ h2{
     background-size: cover;
 }
 
+.text-image {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    width: 600px;
+    padding: 20px;
+}
+
+.foto-index {
+    height: 300px;
+    padding: 20px;
+}
+
 .hero-sec-horarios {  display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
@@ -214,6 +240,7 @@ h2{
     grid-template-areas:
       "photo photo tittle tittle"
       "photo photo tittle tittle";
+      border-top: solid 2px #ffffff;
   }
   
   .tittle { grid-area: tittle; 
@@ -240,6 +267,7 @@ h2{
     grid-template-areas:
       "photo photo tittle tittle"
       "photo photo tittle tittle";
+      border-top: solid 2px #ffffff;
   }
   
   .tittle { grid-area: tittle; 
@@ -311,6 +339,7 @@ h2{
     grid-template-areas:
       "photo photo tittle tittle"
       "photo photo tittle tittle";
+      border-top: solid 2px #ffffff;
   }
   
   .tittle { grid-area: tittle; 
@@ -370,5 +399,5 @@ h2{
     background-color: #212529;
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 50px;
 }
