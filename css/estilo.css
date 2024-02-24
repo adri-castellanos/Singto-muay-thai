@@ -258,6 +258,16 @@ h2{
     background-size: cover;
 }
 
+.horario {
+    background-color: #212529;
+    padding: 100px 50px;
+}
+
+.table {
+    text-align: center;
+    align-items: center;
+}
+
 .hero-sec-planes {  display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 300px 300px;
@@ -297,7 +307,6 @@ h2{
     justify-content: center;
     padding: 50px;
 }
-
 
 .card {
     padding: 20px;
