@@ -11,7 +11,7 @@
 
 .hero-section {
     border-top: solid 2px #ffffff;
-    background-image: url('../resources/dark-plaster-pattern.jpg');
+    background-image: url('../resources/dark-plaster-pattern.svg');
     background-size: cover;
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -165,7 +165,7 @@ h2{
 
 .footer {
     border-top: solid 2px #ffffff;
-    background-image: url('../resources/dark-plaster-pattern.jpg');
+    background-image: url('../resources/dark-plaster-pattern.svg');
     background-size: cover;
     font-family: "Lato", sans-serif;
     text-align: center;
