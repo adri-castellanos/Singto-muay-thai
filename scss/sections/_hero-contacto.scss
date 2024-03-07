@@ -1,29 +1,29 @@
 .hero-sec-contacto {  display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 300px 300px;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "photo photo tittle tittle"
-      "photo photo tittle tittle";
-      border-top: solid 2px #ffffff;
-      tittle { grid-area: tittle; 
-        background-image: url(../resources/background-newsletter.png);
-        background-size: cover;
-        color: white;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-      
-      photo-contacto { grid-area: photo;
-        background-image: url(../resources/contacto.png);
-        background-size: cover;
-    }
-  }
-  
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 300px 300px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "photo photo tittle tittle"
+    "photo photo tittle tittle";
+    border-top: solid 2px #ffffff;
+}
+
+.tittle { grid-area: tittle; 
+  background-image: url(../resources/background-newsletter.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-contacto { grid-area: photo;
+  background-image: url(../resources/contacto.png);
+  background-size: cover;
+}
 
 @media (max-width: 600px) {
     .hero-sec-contacto {  display: grid;
