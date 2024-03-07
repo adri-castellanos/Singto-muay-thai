@@ -1,0 +1,32 @@
+/* PROGRAMAS */
+.text-image {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foto-index {
+    height: 300px;
+    padding: 20px;
+}
+
+/* MEDIA QUERYS - MOBILE LAST */
+
+@media (max-width: 600px) {
+
+      .text-image {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: white;
+        justify-content: center;
+    }
+}

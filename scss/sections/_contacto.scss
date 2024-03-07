@@ -1,0 +1,49 @@
+.form {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.form-inputs {
+    margin: 0 25%;
+}
+
+.contacto {
+    background-color:#212529;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+
+.mapa {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+}
+
+/* MEDIA QUERYS - MOBILE LAST */
+
+@media (max-width: 600px) {
+
+    .form {
+      padding: 0px;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+  }
+    
+
+  .mapa {
+    padding: 0px 50px 50px 50px;
+}
+}

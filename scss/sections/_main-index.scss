@@ -1,0 +1,198 @@
+
+.conocenos {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: #eb4795;
+}
+
+.text-image-combo-text {
+    width: 700px;
+    padding: 25px;
+}
+
+.text-image-combo-image {
+    width: 400px;
+    padding: 0px;
+}
+
+.programas {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+}
+
+.text-box {
+    width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-programas {  display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-auto-columns: 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "camp camp basics drills"
+      "camp camp basics kids";
+  }
+  
+  .camp { grid-area: camp;
+    background-image: url('../resources/camp.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+ }
+
+  .basics { grid-area: basics;
+    background-image: url('../resources/basics.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .drills { grid-area: drills;
+    background-image: url('../resources/drills.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .kids { grid-area: kids;
+    background-image: url('../resources/kids.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fight-opportunities {
+    background-color: #212529;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn btn-light {
+    &:hover {
+        background-color: #982fab;
+        color: #ffffff;
+    }
+}
+
+a {
+    color: #212529;
+    text-decoration: none;
+}
+
+
+.newsletter {
+    background-image: url('../resources/background-newsletter.png');
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 600px) {
+    
+    .conocenos {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .text-image-combo-text {
+        width: auto;
+    }
+
+    .text-image-combo-image {
+        width: 200px;
+    }
+
+    .programas {
+        background-color: #212529;
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .text-box {
+        width: auto;
+    }
+
+    .info-programas {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 200px 200px;
+        gap: 25px 25px;
+        grid-template-areas:
+            "camp camp basics basics"
+            "drills drills kids kids";
+            justify-content: center;
+    }
+
+    .text-image-combo-text {
+        text-align: center;
+    }
+
+    .fight-opportunities {
+        padding: 20px;
+    }
+}
