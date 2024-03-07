@@ -10,25 +10,17 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px;
+    
+    card {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    h3-planes {
+        color: #eb4795;
+    }
 }
 
-.card {
-    padding: 20px;
-    margin: 20px;
-}
-
-.h3-planes {
-    color: #eb4795;
-}
-
-.card {
-    padding: 24px;
-    margin: 20px;
-}
-
-.h3-planes {
-    color: #eb4795;
-}
 
 @media (max-width: 600px) {
 

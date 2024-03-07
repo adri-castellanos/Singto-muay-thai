@@ -8,22 +8,22 @@
       "photo photo tittle tittle"
       "photo photo tittle tittle";
       border-top: solid 2px #ffffff;
+      tittle { grid-area: tittle; 
+        background-image: url(../resources/background-newsletter.png);
+        background-size: cover;
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+      
+      photo-contacto { grid-area: photo;
+        background-image: url(../resources/contacto.png);
+        background-size: cover;
+    }
   }
   
-  .tittle { grid-area: tittle; 
-    background-image: url(../resources/background-newsletter.png);
-    background-size: cover;
-    color: white;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-  
-  .photo-contacto { grid-area: photo;
-    background-image: url(../resources/contacto.png);
-    background-size: cover;
-}
 
 @media (max-width: 600px) {
     .hero-sec-contacto {  display: grid;
