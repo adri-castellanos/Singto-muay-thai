@@ -1,6 +1,6 @@
 .form {
-    background-color: #212529;
-    color: #ffffff;
+    background-color: $darkgrey;
+    color: $white;
     padding: 50px;
 }
 
@@ -10,17 +10,8 @@
 
 
 .contacto {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px;
+   @extend .propiedades-basicas;
+   @extend .flex-derecha-row;
 }
     
     .card {
@@ -29,7 +20,7 @@
     }
 
 .mapa {
-    background-color: #212529;
+    background-color: $darkgrey;
     display: flex;
     justify-content: center;
     padding: 0px 0px 50px 0px;

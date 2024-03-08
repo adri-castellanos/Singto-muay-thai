@@ -7,17 +7,11 @@
   grid-template-areas:
     "photo photo tittle tittle"
     "photo photo tittle tittle";
-    border-top: solid 2px #ffffff;
+    border-top: solid 2px $white
 }
 
 .tittle { grid-area: tittle; 
-  background-image: url(../resources/background-newsletter.png);
-  background-size: cover;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @extend .hero-sections;
 }
 
 .photo-programas { grid-area: photo;
@@ -36,6 +30,5 @@
       grid-template-areas:
         "photo photo photo photo"
         "tittle tittle tittle tittle";
-        border-top: solid 2px #ffffff;
     } 
   }

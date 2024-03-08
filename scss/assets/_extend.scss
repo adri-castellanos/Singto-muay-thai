@@ -1,0 +1,37 @@
+.propiedades-basicas {
+    background-color: $darkgrey;
+    font-family: "Lato", sans-serif;
+    color: $white;
+    font-size: 18px;
+}
+
+.flex-derecha-row {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    align-content: space-between;
+}
+
+.hero-sections {
+    background-image: url(../resources/background-newsletter.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-h;
+}

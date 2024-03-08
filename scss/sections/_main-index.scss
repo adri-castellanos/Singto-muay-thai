@@ -1,20 +1,11 @@
 .conocenos {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    align-content: space-between;
-    flex-wrap: wrap;
+   @extend .propiedades-basicas;
+   @extend .flex-derecha-row;
 }
 
 h2 {
-    color: #eb4795;
+    color: $fucsia;
+    font-family: $font-h;
 }
 
 .text-image-combo-text {
@@ -23,24 +14,16 @@ h2 {
 }
 
 .text-image-combo-image {
-    width: 500px;
+    width: 350px;
     padding: 0px;
+    border-radius: 15px;
 }
 
 
 
 .programas {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: white;
-    font-size: 18px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    align-content: space-between;
+    @extend .propiedades-basicas;
+    @extend .flex-column;
 }
 
 .text-box {
@@ -65,9 +48,11 @@ h2 {
 
 .camp {
     grid-area: camp;
+    border-radius: 15px;
     background-image: url('../resources/camp.png');
     background-size: cover;
-    color: white;
+    color: $white;
+    font-family: $font-h;
     display: flex;
     text-align: center;
     align-items: center;
@@ -76,9 +61,11 @@ h2 {
 
 .basics {
     grid-area: basics;
+    border-radius: 15px;
     background-image: url('../resources/basics.png');
     background-size: cover;
-    color: white;
+    color: $white;
+    font-family: $font-h;
     display: flex;
     text-align: center;
     align-items: center;
@@ -87,9 +74,11 @@ h2 {
 
 .drills {
     grid-area: drills;
+    border-radius: 15px;
     background-image: url('../resources/drills.png');
     background-size: cover;
-    color: white;
+    color: $white;
+    font-family: $font-h;
     display: flex;
     text-align: center;
     align-items: center;
@@ -98,9 +87,11 @@ h2 {
 
 .kids {
     grid-area: kids;
+    border-radius: 15px;
     background-image: url('../resources/kids.png');
     background-size: cover;
-    color: white;
+    color: $white;
+    font-family: $font-h;
     display: flex;
     text-align: center;
     align-items: center;
@@ -109,38 +100,29 @@ h2 {
 
 button {
     &:hover {
-        background-color: #982fab;
-        color: #ffffff;
+        background-color: $fucsia;
+        color: $white;
     }
 }
 
 a {
-    color: #212529;
+    color: $darkgrey;
     text-decoration: none;
 }
 
 
 
 .fight-opportunities {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    text-align: right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    align-content: space-between;
-    flex-wrap: wrap;
+    @extend .propiedades-basicas;
+    @extend .flex-derecha-row;
+    font-family: $font-h;
 }
 
 .newsletter {
     background-image: url('../resources/background-newsletter.png');
     background-size: cover;
     font-family: "Lato", sans-serif;
-    color: #ffffff;
+    color: $white;
     font-size: 18px;
     text-align: left;
     display: flex;
@@ -152,16 +134,19 @@ a {
     flex-wrap: wrap;
 }
 
+h3 {
+    font-family: $font-h;
+}
+
 
 @media (max-width: 600px) {
 
     .conocenos {
-        background-color: #212529;
-        font-family: "Lato", sans-serif;
-        color: #ffffff;
-        font-size: 18px;
         text-align: center;
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .text-image-combo-text {
@@ -169,15 +154,11 @@ a {
     }
 
     .text-image-combo-image {
-        height: 400px;
+        width: 350px;
     }
 
 
     .programas {
-        background-color: #212529;
-        font-family: "Lato", sans-serif;
-        color: #ffffff;
-        font-size: 18px;
         text-align: center;
     }
 

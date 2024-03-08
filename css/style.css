@@ -1,24 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap");
 /*Reseteo*/
 * {
   margin: 0;
   padding: 0; }
 
+.propiedades-basicas, .conocenos, .programas, .fight-opportunities, .text-image, .planes, .contacto {
+  background-color: #212529;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 18px; }
+
+.flex-derecha-row, .conocenos, .fight-opportunities, .text-image, .planes, .contacto {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  align-content: space-between;
+  flex-wrap: wrap; }
+
+.flex-column, .programas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  align-content: space-between; }
+
+.hero-sections, .tittle {
+  background-image: url(../resources/background-newsletter.png);
+  background-size: cover;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif; }
+
 .hero-section {
   border-top: solid 2px #ffffff;
   background-image: url("../resources/dark-plaster-pattern.svg");
   background-size: cover;
-  font-family: "Lato", sans-serif;
   text-align: center;
-  color: white;
-  font-size: 25px;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding: 80px; }
-  .hero-section logo-hero {
-    height: 200px; }
+  .hero-section h1 {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Montserrat Alternates", sans-serif; }
   .hero-section a {
     color: #212529;
     text-decoration: none; }
@@ -33,43 +66,18 @@
   .logo-hero {
     width: 100%; } }
 
-.conocenos {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  align-content: space-between;
-  flex-wrap: wrap; }
-
 h2 {
-  color: #eb4795; }
+  color: #eb4795;
+  font-family: "Montserrat Alternates", sans-serif; }
 
 .text-image-combo-text {
   width: 700px;
   padding: 25px; }
 
 .text-image-combo-image {
-  width: 500px;
-  padding: 0px; }
-
-.programas {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: white;
-  font-size: 18px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  align-content: space-between; }
+  width: 350px;
+  padding: 0px;
+  border-radius: 15px; }
 
 .text-box {
   width: 700px;
@@ -89,9 +97,11 @@ h2 {
 
 .camp {
   grid-area: camp;
+  border-radius: 15px;
   background-image: url("../resources/camp.png");
   background-size: cover;
-  color: white;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
@@ -99,9 +109,11 @@ h2 {
 
 .basics {
   grid-area: basics;
+  border-radius: 15px;
   background-image: url("../resources/basics.png");
   background-size: cover;
-  color: white;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
@@ -109,9 +121,11 @@ h2 {
 
 .drills {
   grid-area: drills;
+  border-radius: 15px;
   background-image: url("../resources/drills.png");
   background-size: cover;
-  color: white;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
@@ -119,16 +133,18 @@ h2 {
 
 .kids {
   grid-area: kids;
+  border-radius: 15px;
   background-image: url("../resources/kids.png");
   background-size: cover;
-  color: white;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center; }
 
 button:hover {
-  background-color: #982fab;
+  background-color: #eb4795;
   color: #ffffff; }
 
 a {
@@ -136,18 +152,7 @@ a {
   text-decoration: none; }
 
 .fight-opportunities {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  align-content: space-between;
-  flex-wrap: wrap; }
+  font-family: "Montserrat Alternates", sans-serif; }
 
 .newsletter {
   background-image: url("../resources/background-newsletter.png");
@@ -164,23 +169,21 @@ a {
   align-content: space-between;
   flex-wrap: wrap; }
 
+h3 {
+  font-family: "Montserrat Alternates", sans-serif; }
+
 @media (max-width: 600px) {
   .conocenos {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
     text-align: center;
-    padding: 20px; }
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .text-image-combo-text {
     width: auto; }
   .text-image-combo-image {
-    height: 400px; }
+    width: 350px; }
   .programas {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
     text-align: center; }
   .text-box {
     width: auto; }
@@ -222,14 +225,7 @@ a {
   border-top: solid 2px #ffffff; }
 
 .tittle {
-  grid-area: tittle;
-  background-image: url(../resources/background-newsletter.png);
-  background-size: cover;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
+  grid-area: tittle; }
 
 .photo-programas {
   grid-area: photo;
@@ -244,34 +240,13 @@ a {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle";
-    border-top: solid 2px #ffffff; } }
+    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle"; } }
 
 /* PROGRAMAS */
-.text-image {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: white;
-  font-size: 18px;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  align-content: space-between;
-  flex-wrap: wrap; }
-  .text-image .foto-index {
-    height: 300px;
-    padding: 20px; }
-
-/* MEDIA QUERYS - MOBILE LAST */
-@media (max-width: 600px) {
-  .text-image {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: white;
-    justify-content: center; } }
+.text-image .foto-index {
+  height: 300px;
+  padding: 20px;
+  border-radius: 40px; }
 
 .hero-sec-horarios {
   display: grid;
@@ -284,14 +259,7 @@ a {
   border-top: solid 2px #ffffff; }
 
 .tittle {
-  grid-area: tittle;
-  background-image: url(../resources/background-newsletter.png);
-  background-size: cover;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
+  grid-area: tittle; }
 
 .photo-horarios {
   grid-area: photo;
@@ -306,8 +274,7 @@ a {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle";
-    border-top: solid 2px #ffffff; } }
+    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle"; } }
 
 .horario {
   background-color: #212529;
@@ -327,14 +294,7 @@ a {
   border-top: solid 2px #ffffff; }
 
 .tittle {
-  grid-area: tittle;
-  background-image: url(../resources/background-newsletter.png);
-  background-size: cover;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
+  grid-area: tittle; }
 
 .photo-planes {
   grid-area: photo;
@@ -352,36 +312,12 @@ a {
     grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle";
     border-top: solid 2px #ffffff; } }
 
-.planes {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 50px; }
-  .planes .card {
-    padding: 20px;
-    margin: 20px; }
-  .planes .h3-planes {
-    color: #eb4795; }
+.planes .card {
+  padding: 20px;
+  margin: 20px; }
 
-@media (max-width: 600px) {
-  .planes {
-    background-color: #212529;
-    font-family: "Lato", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px; } }
+.planes .h3-planes {
+  color: #eb4795; }
 
 .hero-sec-contacto {
   display: grid;
@@ -394,14 +330,7 @@ a {
   border-top: solid 2px #ffffff; }
 
 .tittle {
-  grid-area: tittle;
-  background-image: url(../resources/background-newsletter.png);
-  background-size: cover;
-  color: white;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center; }
+  grid-area: tittle; }
 
 .photo-contacto {
   grid-area: photo;
@@ -416,8 +345,7 @@ a {
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle";
-    border-top: solid 2px #ffffff; } }
+    grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle"; } }
 
 .form {
   background-color: #212529;
@@ -426,19 +354,6 @@ a {
 
 .form-inputs {
   margin: 0 25%; }
-
-.contacto {
-  background-color: #212529;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 50px; }
 
 .card {
   padding: 20px;

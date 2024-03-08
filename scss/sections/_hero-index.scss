@@ -1,31 +1,30 @@
 .hero-section {
-    border-top: solid 2px #ffffff;
+    border-top: solid 2px $white;
     background-image: url('../resources/dark-plaster-pattern.svg');
     background-size: cover;
-    font-family: "Lato", sans-serif;
     text-align: center;
-    color: white;
-    font-size: 25px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 80px;
 
-    logo-hero {
-        height: 200px;
+    h1 {
+        color: $white;
+        font-size: 25px;
+        font-family: $font-h;
     }
+    
 
     a {
-        color: #212529;
+        color: $darkgrey;
         text-decoration: none;
     }
 
     button {
         &:hover {
             background-color: #982fab;
-            color: #ffffff;
+            color: $white;
         }
     }
     .logo-hero {
