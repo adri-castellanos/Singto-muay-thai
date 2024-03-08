@@ -1,5 +1,8 @@
+.contacto {
+    @extend .propiedades-basicas;
+}
+
 .form {
-    background-image: radial-gradient(black, $darkgrey);
     color: $white;
     padding: 50px;
 }
@@ -9,8 +12,7 @@
 }
 
 
-.contacto {
-   @extend .propiedades-basicas;
+.info-contacto {
    @extend .flex-derecha-row;
 }
     
@@ -20,7 +22,6 @@
     }
 
 .mapa {
-    background-image: radial-gradient(black, $darkgrey);
     display: flex;
     justify-content: center;
     padding: 0px 0px 50px 0px;

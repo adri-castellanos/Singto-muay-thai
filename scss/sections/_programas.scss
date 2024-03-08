@@ -1,6 +1,9 @@
 /* PROGRAMAS */
-.text-image {
+.programas {
     @extend .propiedades-basicas;
+}
+
+.text-image {
     @extend .flex-derecha-row;
   
     .foto-index {

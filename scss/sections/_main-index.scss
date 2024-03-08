@@ -1,5 +1,9 @@
+.index {
+    @extend .propiedades-basicas;
+}
+
 .conocenos {
-   @extend .propiedades-basicas;
+   
    @extend .flex-derecha-row;
 }
 
@@ -22,7 +26,7 @@ h2 {
 
 
 .programas {
-    @extend .propiedades-basicas;
+    
     @extend .flex-column;
 }
 
@@ -113,7 +117,6 @@ a {
 
 
 .fight-opportunities {
-    @extend .propiedades-basicas;
     @extend .flex-derecha-row;
     font-family: $font-h;
 }

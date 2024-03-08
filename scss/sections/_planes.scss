@@ -1,6 +1,10 @@
 .planes {
     @extend .propiedades-basicas;
+    min-height: 48.1vh;
+}
+.info-planes {
     @extend .flex-derecha-row;
+    padding: 20px;
     
     
     .card {
@@ -14,7 +18,7 @@
 }
 
 @media (max-width: 600px) {
-    .planes {
+    .info-planes {
         text-align: center;
     }
 
