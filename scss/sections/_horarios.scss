@@ -1,6 +1,7 @@
 .horario {
-    background-color: $darkgrey;
+    background-image: radial-gradient(black, $darkgrey);
     padding: 100px 50px;
+    min-height: 46.35vh;
     
     table {
         text-align: center;

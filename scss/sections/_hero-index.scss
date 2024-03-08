@@ -13,6 +13,7 @@
         color: $white;
         font-size: 25px;
         font-family: $font-h;
+        transform: translatey(50px);
     }
     
 
@@ -22,6 +23,7 @@
     }
 
     button {
+        transform: translateY(50px);
         &:hover {
             background-color: $fucsia;
             color: $white;

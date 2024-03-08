@@ -11,6 +11,7 @@
 }
 
 .tittle { grid-area: tittle; 
+  background-image: url(../resources/background-newsletter.png);
   @extend .hero-sections;
 }
 

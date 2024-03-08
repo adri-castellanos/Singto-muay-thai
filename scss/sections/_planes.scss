@@ -2,6 +2,7 @@
     @extend .propiedades-basicas;
     @extend .flex-derecha-row;
     
+    
     .card {
         padding: 20px;
         margin: 20px;
@@ -10,4 +11,13 @@
     .h3-planes {
         color: $fucsia;
     }
+}
+
+@media (max-width: 600px) {
+    .planes {
+        text-align: center;
+    }
+
+    
+
 }

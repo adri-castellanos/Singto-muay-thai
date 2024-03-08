@@ -5,7 +5,7 @@
   padding: 0; }
 
 .propiedades-basicas, .conocenos, .programas, .fight-opportunities, .text-image, .planes, .contacto {
-  background-color: #212529;
+  background-image: radial-gradient(black, #212529);
   font-family: "Lato", sans-serif;
   color: #ffffff;
   font-size: 18px; }
@@ -51,13 +51,16 @@
   .hero-section h1 {
     color: #ffffff;
     font-size: 25px;
-    font-family: "Montserrat Alternates", sans-serif; }
+    font-family: "Montserrat Alternates", sans-serif;
+    transform: translatey(50px); }
   .hero-section a {
     color: #212529;
     text-decoration: none; }
-  .hero-section button:hover {
-    background-color: #eb4795;
-    color: #ffffff; }
+  .hero-section button {
+    transform: translateY(50px); }
+    .hero-section button:hover {
+      background-color: #eb4795;
+      color: #ffffff; }
   .hero-section .logo-hero {
     height: 200px; }
 
@@ -277,8 +280,9 @@ h3 {
     grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle"; } }
 
 .horario {
-  background-color: #212529;
-  padding: 100px 50px; }
+  background-image: radial-gradient(black, #212529);
+  padding: 100px 50px;
+  min-height: 46.35vh; }
   .horario table {
     text-align: center;
     align-items: center; }
@@ -294,7 +298,8 @@ h3 {
   border-top: solid 2px #ffffff; }
 
 .tittle {
-  grid-area: tittle; }
+  grid-area: tittle;
+  background-image: url(../resources/background-newsletter.png); }
 
 .photo-planes {
   grid-area: photo;
@@ -318,6 +323,10 @@ h3 {
 
 .planes .h3-planes {
   color: #eb4795; }
+
+@media (max-width: 600px) {
+  .planes {
+    text-align: center; } }
 
 .hero-sec-contacto {
   display: grid;
@@ -348,7 +357,7 @@ h3 {
     grid-template-areas: "photo photo photo photo" "tittle tittle tittle tittle"; } }
 
 .form {
-  background-color: #212529;
+  background-image: radial-gradient(black, #212529);
   color: #ffffff;
   padding: 50px; }
 
@@ -360,7 +369,7 @@ h3 {
   margin: 20px; }
 
 .mapa {
-  background-color: #212529;
+  background-image: radial-gradient(black, #212529);
   display: flex;
   justify-content: center;
   padding: 0px 0px 50px 0px; }

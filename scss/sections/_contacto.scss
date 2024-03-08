@@ -1,5 +1,5 @@
 .form {
-    background-color: $darkgrey;
+    background-image: radial-gradient(black, $darkgrey);
     color: $white;
     padding: 50px;
 }
@@ -20,7 +20,7 @@
     }
 
 .mapa {
-    background-color: $darkgrey;
+    background-image: radial-gradient(black, $darkgrey);
     display: flex;
     justify-content: center;
     padding: 0px 0px 50px 0px;
