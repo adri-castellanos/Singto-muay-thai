@@ -372,6 +372,7 @@ h3 {
   .contacto {
     display: flex;
     flex-direction: column;
-    width: auto; }
+    width: auto;
+    flex-wrap: nowrap; }
   .mapa {
     padding: 0px 50px 50px 50px; } }
