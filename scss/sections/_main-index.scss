@@ -21,6 +21,10 @@ h2 {
     width: 350px;
     padding: 0px;
     border-radius: 15px;
+    transition: .1s ease-in;
+    &:hover {
+       transform: scale(1.05);
+}
 }
 
 

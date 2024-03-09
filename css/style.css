@@ -91,7 +91,10 @@ h2 {
 .text-image-combo-image {
   width: 350px;
   padding: 0px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  transition: .1s ease-in; }
+  .text-image-combo-image:hover {
+    transform: scale(1.05); }
 
 .text-box {
   width: 700px;
@@ -261,9 +264,9 @@ h3 {
   height: 300px;
   padding: 20px;
   border-radius: 40px;
-  transition: .5s ease-in; }
+  transition: .1s ease-in; }
   .text-image .foto-index:hover {
-    transform: scale(1.1); }
+    transform: scale(1.05); }
 
 .hero-sec-horarios {
   display: grid;
@@ -339,9 +342,9 @@ h3 {
   .info-planes .card {
     padding: 20px;
     margin: 20px;
-    transition: .5s ease-in; }
+    transition: .1s ease-in; }
     .info-planes .card:hover {
-      transform: scale(1.1); }
+      transform: scale(1.05); }
   .info-planes .h3-planes {
     color: #eb4795; }
 
@@ -387,9 +390,9 @@ h3 {
 .card {
   padding: 20px;
   margin: 20px;
-  transition: .5s ease-in; }
+  transition: .1s ease-in; }
   .card:hover {
-    transform: scale(1.1); }
+    transform: scale(1.05); }
 
 .mapa {
   display: flex;
