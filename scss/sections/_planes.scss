@@ -1,6 +1,7 @@
 .planes {
     @extend .propiedades-basicas;
     min-height: 48.1vh;
+    
 }
 .info-planes {
     @extend .flex-derecha-row;
@@ -10,6 +11,10 @@
     .card {
         padding: 20px;
         margin: 20px;
+        transition: .5s ease-in;
+         &:hover {
+            transform: scale(1.1);
+        }
     }
     
     .h3-planes {

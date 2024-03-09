@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0; }
 
-.propiedades-basicas, .index, .programas, .planes, .contacto {
+.propiedades-basicas, .index, .programas-detalle, .planes, .contacto {
   background-image: radial-gradient(#212529e1, #161616);
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -38,6 +38,14 @@
   justify-content: center;
   font-family: "Montserrat Alternates", sans-serif; }
 
+@keyframes latido {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
+
 .hero-section {
   border-top: solid 2px #ffffff;
   background-image: url("../resources/dark-plaster-pattern.svg");
@@ -62,7 +70,10 @@
       background-color: #eb4795;
       color: #ffffff; }
   .hero-section .logo-hero {
-    height: 200px; }
+    height: 200px;
+    animation-name: latido;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
 
 /* MEDIA QUERYS MOBILE LAST */
 @media (max-width: 600px) {
@@ -249,7 +260,10 @@ h3 {
 .text-image .foto-index {
   height: 300px;
   padding: 20px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  transition: .5s ease-in; }
+  .text-image .foto-index:hover {
+    transform: scale(1.1); }
 
 .hero-sec-horarios {
   display: grid;
@@ -324,7 +338,10 @@ h3 {
   padding: 20px; }
   .info-planes .card {
     padding: 20px;
-    margin: 20px; }
+    margin: 20px;
+    transition: .5s ease-in; }
+    .info-planes .card:hover {
+      transform: scale(1.1); }
   .info-planes .h3-planes {
     color: #eb4795; }
 
@@ -369,7 +386,10 @@ h3 {
 
 .card {
   padding: 20px;
-  margin: 20px; }
+  margin: 20px;
+  transition: .5s ease-in; }
+  .card:hover {
+    transform: scale(1.1); }
 
 .mapa {
   display: flex;

@@ -2,8 +2,8 @@
     @extend .propiedades-basicas;
 }
 
+
 .conocenos {
-   
    @extend .flex-derecha-row;
 }
 
@@ -26,7 +26,6 @@ h2 {
 
 
 .programas {
-    
     @extend .flex-column;
 }
 

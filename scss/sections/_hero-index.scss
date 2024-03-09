@@ -31,8 +31,12 @@
     }
     .logo-hero {
         height: 200px;
+        animation-name: latido;
+         animation-duration: 3s;
+         animation-iteration-count: infinite;
+        }
     }
-}
+
 
 
 

@@ -8,7 +8,7 @@
 }
 
 .form-inputs {
-    margin: 0 25%;
+    margin: 0 25%;   
 }
 
 
@@ -17,9 +17,14 @@
 }
     
     .card {
-        padding: 20px;
-        margin: 20px;
+       padding: 20px;
+        margin: 20px; 
+        transition: .5s ease-in;
+         &:hover {
+            transform: scale(1.1);
+        
     }
+}
 
 .mapa {
     display: flex;
