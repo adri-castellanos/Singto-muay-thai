@@ -48,7 +48,7 @@
 
 .hero-section {
   border-top: solid 2px #ffffff;
-  background-image: url("../resources/dark-plaster-pattern.svg");
+  background-image: url("../resources/dark-plaster-pattern.jpg");
   background-size: cover;
   text-align: center;
   display: flex;
@@ -58,7 +58,6 @@
   padding: 80px; }
   .hero-section h1 {
     color: #ffffff;
-    font-size: 25px;
     font-family: "Montserrat Alternates", sans-serif;
     transform: translatey(50px); }
   .hero-section a {
@@ -218,7 +217,7 @@ h3 {
 
 .footer {
   border-top: solid 2px #ffffff;
-  background-image: url("../resources/dark-plaster-pattern.svg");
+  background-image: url("../resources/dark-plaster-pattern.jpg");
   background-size: cover;
   font-family: "Lato", sans-serif;
   text-align: center;
